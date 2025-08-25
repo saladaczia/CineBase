@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    let items = ["Movie 1", "Movie 2", "Movie 3"]
+    
     var body: some View {
-        Text("Favorites Screen")
-            .font(.largeTitle)
-            .padding()
+        NavigationStack {
+            List(items, id: \.self) { item in
+                Text(item)
+            }
+            .listStyle(.inset)
+            .navigationTitle("Favorites")
+        }
     }
 }
 

@@ -14,9 +14,9 @@ struct FavoritesView: View {
     var body: some View {
         NavigationStack {
             List(items, id: \.self) { item in
-                Text(item)
+                RowView()
             }
-            .listStyle(.inset)
+            .listStyle(.plain)
             .navigationTitle("Favorites")
         }
     }

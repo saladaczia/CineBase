@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FirstView.swift
 //  CineBase
 //
 //  Created by Maciej Sołoducha on 25/08/2025.

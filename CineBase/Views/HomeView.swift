@@ -26,10 +26,9 @@ struct HomeView: View {
                 ScrollView(.horizontal) {
                             HStack {
                                 ForEach(1..<21) { number in
-                                    Text("Movie \(number)")
-                                        .padding()
-                                        .frame(width: 100, height: 150)
-                                        .background(Color.gray.opacity(0.3))
+                                    Image("TestPoster")
+                                        .resizable()
+                                        .frame(width: 100, height: 155)
                                         .cornerRadius(10)
                                 }
                             }

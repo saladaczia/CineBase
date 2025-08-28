@@ -14,7 +14,7 @@ struct UpcomingView: View {
     var body: some View {
         NavigationStack {
             List(items, id: \.self) { item in
-                Text(item)
+                RowView()
             }
             .listStyle(.inset)
             .navigationTitle("Upcoming")
